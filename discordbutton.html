@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content"width=device-width, initial-scale=1">
+        <title>Discord Soundboard (ripped from discord)</title>
+        <style>
+    	body {
+    	    background-color: #111214;
+    	    display: grid;
+    	    grid-template-columns: auto auto;
+    	    grid-template-rows: auto auto auto;
+    	}
+    
+    	.button {
+    	    position: relative;
+    	    margin: 1%;
+    	    padding: 1.5em 1em;
+    	    border-radius: 50px;
+    	    text-align: center;
+    	    background-color: #2B2D31;
+    	    color: #FFFFFF;
+    	}
+        </style>
+    </head>
+    <body>
+        <div onclick="playSound('quack')" class="button">🦆 quack</div>
+        <div onclick="playSound('golf-clap')" class="button">👏 golf clap</div>
+        <div onclick="playSound('airhorn')" class="button">🔊 airhorn</div>
+        <div onclick="playSound('sad-horn')" class="button">🎺 sad horn</div>
+        <div onclick="playSound('cricket')"class="button">🦗 cricket</div>
+        <div onclick="playSound('ba-dun-tss')"class="button">🥁 ba dum tss</div>
+	<audio id="e" src=""></audio>
+	<script>
+	    var sfx = document.getElementById('e');
+
+	    function playSound(s) {
+		switch(s) {
+		    case 'quack':
+			sfx.src = '/assets/1.mp3';
+			break;
+		    case 'golf-clap':
+			sfx.src = '/assets/2.mp3';
+			break;
+		    case 'airhorn':
+			sfx.src = '/assets/3.mp3';
+			break;
+		    case 'sad-horn':
+			sfx.src = '/assets/4.mp3';
+			break;
+		    case 'cricket':
+			sfx.src = '/assets/5.mp3';
+			break;
+		    case 'ba-dun-tss':
+			sfx.src = '/assets/6.mp3';
+			break;
+		}
+		sfx.cloneNode().play();
+	    }
+	</script>
+    </body>
+</html>
