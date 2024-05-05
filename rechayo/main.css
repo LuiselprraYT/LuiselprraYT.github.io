@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+::selection {
+    background-color: #FFFFFF;
+    color: #00FF00;
+}
+
+.show {
+    transition: 1s linear;
+    left: 1em !important;
+}
+
+body {
+    background: #00000088 url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.britannica.com%2F86%2F218886-050-3CFD0AC9%2Fchayote-fruit-Sechium-edule.jpg&f=1&nofb=1&ipt=e67ae43af64a8a8a66661411c21b3336de5d9f49246274cf3924fdedd00dd1f6&ipo=images") fixed;
+    background-size: cover;
+    font-family: "Ubuntu Sans", sans-serif;
+    color: #FFFFFF;
+}
+
+header {
+    text-align: center;
+}
+
+#menu {
+    position: fixed;
+    width: 8vw;
+    top: 50%;
+    left: -100%;
+    transform: translateY(-50%);
+    list-style: none;
+    background-color: #000000AA;
+    padding: 0.75em;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    transition: left 1.5s ease-in;
+}
+
+#menu li {
+    font-size: 1.1em;
+    margin: 0.1em 0;
+}
+
+nav {
+    background-color: #404665;
+    width: fit-content;
+    padding: 0.5em 0;
+    margin: auto;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #636c98;
+}
+
+#menu a,
+nav a {
+    padding: 0.5em;
+    font-size: 1.15em;
+    color: #75FF75;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 0.2em 1em;
+    background-color: #000000AA;
+    border: 3px solid #FFFFFF;
+    border-radius: 10px;
+    margin: 0 25vw;
+    font-size: 1.25em;
+}
+
+.content a {
+    color: #75FF75;
+}
+
+.content ul li {
+    margin: 0.5em 0;
+}
